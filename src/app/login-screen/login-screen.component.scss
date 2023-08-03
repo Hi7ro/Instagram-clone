@@ -1,0 +1,231 @@
+.wrapper {
+  position: relative;
+  height: 100vh;
+  .container {
+    position: relative;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //!------------- IMG CONTAINER ----------- //
+    .img-container {
+      height: 70vh;
+      width: 420px;
+      background: url("../../assets/Inst-login-screen.png") no-repeat center;
+      margin-right: 2%;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 70px;
+        right: 28px;
+        animation: fadeIn 4.5s forwards;
+      }
+    }
+
+    //!------------- LOGIN CONTAINER ----------- //
+    .login-container {
+      background-image: url("/src/assets/insta.png");
+      height: 70vh;
+      width: 348px;
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+
+      .login {
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: solid 2px rgba(211, 211, 211, 0.486);
+        border-radius: 4px;
+
+        h1 {
+          padding: 10px;
+          font-family: "Satisfy", cursive;
+          font-size: 40px;
+          cursor: pointer;
+        }
+        input[type="text"],
+        input[type="password"] {
+          background-color: rgb(246, 244, 244);
+          height: 37px;
+          width: 80%;
+          margin-bottom: 5px;
+          padding: 5px;
+          outline: none;
+          border: 1px solid rgb(180, 180, 180);
+          border-radius: 5px;
+        }
+
+        button {
+          color: white;
+          font-weight: bold;
+          margin-top: 10px;
+          height: 32px;
+          width: 80%;
+          background-color: #4bb4f8;
+          border: none;
+          border-radius: 7px;
+        }
+      }
+
+      .line {
+        font-size: 13px;
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .break-line {
+          width: 100px;
+          height: 1px;
+          background-color: lightgrey;
+          margin-left: 17px;
+          margin-right: 17px;
+        }
+      }
+
+      .other-login {
+        height: 240px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        img {
+          width: 20px;
+          margin-right: 10px;
+        }
+
+        .facebook-login {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+
+        .report {
+          margin-top: 30px;
+          margin-left: 27px;
+          margin-right: 27px;
+          font-size: 14px;
+
+          span {
+            margin: unset;
+          }
+        }
+      }
+
+      .sign-up {
+        height: 80px;
+        margin-top: 10px;
+        border: solid 2px rgba(211, 211, 211, 0.486);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          color: #4bb4f8;
+
+          :hover {
+            color: #cdebff;
+          }
+        }
+      }
+
+      .download-store {
+        p {
+          text-align: center;
+        }
+
+        .stores {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .store {
+            height: 40px;
+            width: 135px;
+            margin: 0 5px;
+            :hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  //!--------------------- Footer -------------------- //
+
+  footer {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      display: flex;
+      li {
+        margin: 10px;
+        font-size: 13px;
+        a {
+          text-decoration: none;
+          color: grey;
+        }
+      }
+    }
+
+    .copy-lang {
+      width: 240px;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      select {
+        border-style: none;
+        background-color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .container {
+    .img-container {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .container {
+    height: 75vh !important;
+    .login-container {
+      .login {
+        border: none !important;
+      }
+    }
+
+    .sign-up {
+      border: none !important ;
+    }
+  }
+}

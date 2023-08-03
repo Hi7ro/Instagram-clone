@@ -1,0 +1,101 @@
+<div class="wrapper">
+  <div class="container">
+    <div *ngIf="showImg" class="img-container">
+      <img src="{{ img[currentImg] }}" />
+    </div>
+    <div class="login-container">
+      <div class="login">
+        <h1>Instagram</h1>
+        <input
+          type="text"
+          class="username"
+          id="username"
+          placeholder="Phone number, username, or email"
+        />
+        <input
+          type="password"
+          class="password"
+          id="password"
+          placeholder="Password"
+        />
+        <button class="submit" id="submit">Log in</button>
+        <div class="line">
+          <div class="break-line"></div>
+          <span>OR.</span>
+          <div class="break-line"></div>
+        </div>
+        <div class="other-login">
+          <span class="facebook-login"
+            ><img
+              src="../../assets/Screenshot 2023-08-02 at 23.57.50.png"
+              alt="facebook-img"
+            />
+            <p class="text-blue">Log in with Facebook</p></span
+          >
+          <a href="#" class="reset-pw text-blue">Forgot password?</a>
+
+          <span class="report text-grey"
+            >You can also
+            <span class="report text-blue"
+              >report content you believe is unlawful</span
+            >
+            in your country without logging in.</span
+          >
+        </div>
+      </div>
+
+      <div class="sign-up">
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+      </div>
+
+      <div class="download-store">
+        <p>Get the app.</p>
+        <div class="stores">
+          <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo"
+            ><img
+              src="../../assets/appstore.png"
+              alt="apple-store"
+              class="apple store"
+          /></a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.instagram.android"
+          >
+            <img
+              src="../../assets/playstore.png"
+              alt="google-play-store"
+              class="play store"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <ul>
+      <li><a href="#">Meta</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">API</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Top Accounts</a></li>
+      <li><a href="#">Locations</a></li>
+      <li><a href="#">Instagram Lite</a></li>
+      <li><a href="#">Threads</a></li>
+      <li><a href="#">Contact Uploading & Non-Useres</a></li>
+      <li><a href="#">Meta Verified</a></li>
+    </ul>
+    <div class="copy-lang">
+      <select name="language">
+        <option value="english">English</option>
+        <option value="german">Deutsch</option>
+        <option value="spanish">Español</option>
+        <option value="russian">русский</option>
+        <option value="japanese">日本</option>
+        <option value="chinese">中国人</option>
+      </select>
+      <div class="copy-right">©2023 Instagram from Addy</div>
+    </div>
+  </footer>
+</div>
